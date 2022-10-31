@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+  	    <meta name="description" content="Your next best personal photographer! Available for many different activites, events and appointments.">
+  	    <meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Onya Rose Gallery</title>
+		<!-- external CSS link -->
+        <link rel="stylesheet" href="../tailwind.css" />
+        <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" /> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,400;1,600&display=swap" rel="stylesheet"> 
+        <script type="text/javascript" src="../main.js" defer></script>
+    </head>
+    <body>
+        <div id="menu-mobile" class="fixed h-full w-full translate-x-full bg-white px-8 py-8 invisible transition z-10">
+            <div class="flex justify-between">
+                <h1 class="text-xl font-bold">MENU</h1>
+                <span onclick="menu()" class="text-2xl">&times;</span>
+            </div>
+            <ul>
+                <li class="py-4 border-b-2"><a class="" href="/gallery">The Gallery</a></li>
+                <li class="py-4 border-b-2"><a class="" href="/book">Book an Appointment</a></li>
+                <li class="py-4 border-b-2"><a class="" href="/#about" onclick="menu()">About</a></li>
+                <li class="py-4 border-b-2"><a class="" href="/#contact" onclick="menu()">Contact Me</a></li>
+            </ul>
+            <div class="absolute bottom-3">
+                <span class="py-4">© Onya Rose Photography 2022</span>
+            </div>
+        </div>
+        <header class="w-full">
+            <nav class="w-full flex justify-between p-4 items-center md:bg-white md:fixed md:z-20">
+                <h2 class="text-xl ssp-600 main-bg-color p-2 rounded"><a href="/">ONYA ROSE</a></h2>
+                <span onclick="menu()" class="md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="28" height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg></span>
+                <div id="menu-dt" class="hidden md:block w-4/6">
+                    <ul class="flex w-full justify-around text-black">
+                        <li class=""><a class="p-2 cursor-pointer hover:border-b-2" href="/gallery">The Gallery</a></li>
+                        <li class=""><a class="p-2 cursor-pointer hover:border-b-2" href="/book">Book an Appointment</a></li>
+                        <li class=""><a class="p-2 cursor-pointer hover:border-b-2" href="/#about">About</a></li>
+                        <li class=""><a class="p-2 cursor-pointer hover:border-b-2" href="/#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="md:pt-[95px]">
+            <h1 class="px-4 pb-8 text-2xl font-bold">The Gallery</h1>
+            <section class="flex flex-wrap text-white">
+                <div class="w-full relative md:w-1/4">
+                    <img class="h-[300px] object-cover w-full" src="https://picsum.photos/300">
+                    <div class="">
+                        <span class="absolute p-4 text-xl font-bold w-full bg-[#0000002e] bottom-0">Marcias and Alex's Wedding</span>
+                    </div>
+                </div>
+                <div class="w-full relative md:w-1/4">
+                    <img class="h-[300px] object-cover w-full" src="https://picsum.photos/300">
+                    <div class="">
+                        <span class="absolute p-4 text-xl font-bold w-full bg-[#0000002e] bottom-0">Marcias and Alex's Wedding</span>
+                    </div>
+                </div>
+                <div class="w-full relative md:w-1/4">
+                    <img class="h-[300px] object-cover w-full" src="https://picsum.photos/300">
+                    <div class="">
+                        <span class="absolute p-4 text-xl font-bold w-full bg-[#0000002e] bottom-0">Marcias and Alex's Wedding</span>
+                    </div>
+                </div>
+                <div class="w-full relative md:w-1/4">
+                    <img class="h-[300px] object-cover w-full" src="https://picsum.photos/300">
+                    <div class="">
+                        <span class="absolute p-4 text-xl font-bold w-full bg-[#0000002e] bottom-0">Marcias and Alex's Wedding</span>
+                    </div>
+                </div>
+                <div class="w-full relative md:w-1/4">
+                    <img class="h-[300px] object-cover w-full" src="https://picsum.photos/300">
+                    <div class="">
+                        <span class="absolute p-4 text-xl font-bold w-full bg-[#0000002e] bottom-0">Marcias and Alex's Wedding</span>
+                    </div>
+                </div>
+                <div class="w-full relative md:w-1/4">
+                    <img class="h-[300px] object-cover w-full" src="https://picsum.photos/300">
+                    <div class="">
+                        <span class="absolute p-4 text-xl font-bold w-full bg-[#0000002e] bottom-0">Marcias and Alex's Wedding</span>
+                    </div>
+                </div>
+                <div class="w-full relative md:w-1/4">
+                    <img class="h-[300px] object-cover w-full" src="https://picsum.photos/300">
+                    <div class="">
+                        <span class="absolute p-4 text-xl font-bold w-full bg-[#0000002e] bottom-0">Marcias and Alex's Wedding</span>
+                    </div>
+                </div>
+                <div class="w-full relative md:w-1/4">
+                    <img class="h-[300px] object-cover w-full" src="https://picsum.photos/300">
+                    <div class="">
+                        <span class="absolute p-4 text-xl font-bold w-full bg-[#0000002e] bottom-0">Marcias and Alex's Wedding</span>
+                    </div>
+                </div>
+                <div class="w-full relative md:w-1/4">
+                    <img class="h-[300px] object-cover w-full" src="https://picsum.photos/300">
+                    <div class="">
+                        <span class="absolute p-4 text-xl font-bold w-full bg-[#0000002e] bottom-0">Marcias and Alex's Wedding</span>
+                    </div>
+                </div>
+                <div class="w-full relative md:w-1/4">
+                    <img class="h-[300px] object-cover w-full" src="https://picsum.photos/300">
+                    <div class="">
+                        <span class="absolute p-4 text-xl font-bold w-full bg-[#0000002e] bottom-0">Marcias and Alex's Wedding</span>
+                    </div>
+                </div>
+                <div class="w-full relative md:w-1/4">
+                    <img class="h-[300px] object-cover w-full" src="https://picsum.photos/300">
+                    <div class="">
+                        <span class="absolute p-4 text-xl font-bold w-full bg-[#0000002e] bottom-0">Marcias and Alex's Wedding</span>
+                    </div>
+                </div>
+                <div class="w-full relative md:w-1/4">
+                    <img class="h-[300px] object-cover w-full" src="https://picsum.photos/300">
+                    <div class="">
+                        <span class="absolute p-4 text-xl font-bold w-full bg-[#0000002e] bottom-0">Marcias and Alex's Wedding</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-bg-color flex justify-center items-center">
+            <h1 class="py-4">© Onya Rose Photography 2022</h1>
+        </footer>
+    </body>
+</html>

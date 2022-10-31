@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ssp-200{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+}
+.ssp-300{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+.ssp-400{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+.ssp-600{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+.ssp-600{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+.ssp-italic{
+    font-style: italic;
+}
+
+.test{
+    border: 1px solid red;
+}
+
+.main-bg-color{
+    background: #fffffff2;
+}
+.main-text-color{
+    color: #fffffff2;
+}

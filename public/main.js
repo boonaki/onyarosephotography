@@ -10,7 +10,7 @@ function menu(){
     }
 }
 
-document.querySelector('#bg').style.height = window.innerHeight + 'px'
+document.querySelector('#bg').style.height = window.outerHeight + 'px'
 
 const gallery = document.querySelector('#paginated_gallery');
 if(gallery){

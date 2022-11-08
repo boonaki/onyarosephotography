@@ -8,6 +8,12 @@
 		<title>Onya Rose Photography</title>
 		<!-- external CSS link -->
         <link rel="stylesheet" href="tailwind.css" />
+        <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./favicon-32x32.png"
+        />
         <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" /> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +21,7 @@
         <script type="text/javascript" src="main.js" defer></script>
 	</head>
 	<body class="">
-        <video class="fixed z-neg1 h-full w-full object-cover" autoplay loop muted><source src="imgs/bg-video.mp4"></video>
+        <video id="bg" class="fixed z-neg1 w-full object-cover" autoplay loop muted><source src="imgs/bg-video.mp4"></video>
         
         <div id="menu-mobile" class="fixed h-full w-full translate-x-full bg-white px-8 py-8 invisible transition z-10">
             <div class="flex justify-between">
@@ -44,10 +50,10 @@
                 </svg></span>
                 <div id="menu-dt" class="hidden md:block w-4/6">
                     <ul class="flex w-full justify-around text-black">
-                        <li class=""><a class="p-2 cursor-pointer hover:border-b-2">The Gallery</a></li>
-                        <li class=""><a class="p-2 cursor-pointer hover:border-b-2">Book an Appointment</a></li>
-                        <li class=""><a class="p-2 cursor-pointer hover:border-b-2">About</a></li>
-                        <li class=""><a class="p-2 cursor-pointer hover:border-b-2">Contact</a></li>
+                        <li class=""><a class="p-2 cursor-pointer hover:border-b-2" href="/gallery">The Gallery</a></li>
+                        <li class=""><a class="p-2 cursor-pointer hover:border-b-2" href="/book">Book an Appointment</a></li>
+                        <li class=""><a class="p-2 cursor-pointer hover:border-b-2" id="dt-aboutButton">About</a></li>
+                        <li class=""><span class="p-2 cursor-pointer hover:border-b-2" id="dt-contactButton">Contact</span></li>
                     </ul>
                 </div>
             </nav>
@@ -66,8 +72,8 @@
         <div class="md:flex md:flex-col md:items-center md:mb-8">
         <div class="md:bg-white md:p-2 md:rounded-xl md:w-[767px] lg:w-[1024px]">
             <section class="main-bg-color py-6 flex flex-col items-center">
-                <!-- <h2 class="text-2xl border-b-2 pb-2 mb-2 border-off-grey w-fit">My Work</h2> -->
-                <p class="text-center text-lg px-4 md:px-[10%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos alias molestiae officia est animi suscipit iste qui, sequi sint.</p>
+                <h2 class="text-center text-2xl px-4 m-2 w-fit">An unobtrusive approach to capturing <span class="font-bold">real emotion.</span></h2>
+                <p class="text-center text-lg px-4 mx-2 md:px-[10%]">Explore <a class="underline font-semibold" href="/gallery">my gallery</a>, book an <a class="underline font-semibold" href="/book">appointment</a> or <span id="contactButton" class="underline font-semibold">get in touch</span> with me to help capture your next moments 😊</p>
             </section>
         
             <section class="py-2 main-bg-color md:flex md:items-center md:justify-center md:w-full">
@@ -168,11 +174,11 @@
             </section>
         
             <section id="about" class="main-bg-color py-6 pb-12 flex flex-col items-center md:w-full md:px-[10%]">
-                <h2 class="text-2xl border-b-2 pb-2 mb-2 border-off-grey w-fit font-semi-bold md:text-2xl">a little about me</h2>
-                <p class="text-center text-lg px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos alias molestiae officia est animi suscipit iste qui, sequi sint esse.</br><span class="font-bold">Learn more here!</span></p>
+                <h2 class="text-2xl border-b-2 pb-2 mb-2 border-off-grey w-fit font-semi-bold md:text-2xl">About me</h2>
+                <p class="text-center text-lg px-4">Hello, my name is Jasmine Johnson, the lead photographer for Onya Rose Photography, located in Raleigh, NC</br><span class="font-bold">Learn more here!</span></p>
                 <div class="flex justify-evenly w-full pt-4 px-12">
                     <span>
-                        <a href="#">
+                        <a href="https://instagram.com/onyarosephotography?igshid=YmMyMTA2M2Y=">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-[40px] w-[40px]"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
                         </a>
                     </span>
@@ -183,14 +189,14 @@
                     </span>
                 </div>
                 <span class="text-base my-4">OR</span>
-                <span class="mt-4"><a class="py-2 px-4 rounded text-black font-semibold text-lg border border-off-grey md:cursor-pointer md:transition md:hover:bg-button">Book an Appointment</a></span>
+                <span class="mt-4"><a class="py-2 px-4 rounded text-black font-semibold text-lg border border-off-grey md:cursor-pointer md:transition md:hover:bg-button" href="/book">Book an Appointment</a></span>
             </section>
         </div>
         </div>
         <section class="flex justify-center items-center md:w-full">
             <div id="contact" class="relative main-bg-color m-8 rounded-lg p-8 shadow-lg sm:p-12 sm:pb-8 sm:my-12 md:w-[687px]">
                 <h2 class="font-bold text-2xl">Get in touch!</h2>
-                <p class="pb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptatum!</p>
+                <p class="pb-2">Have a question? Want to chat? Reach out to me by <a href="https://instagram.com/onyarosephotography?igshid=YmMyMTA2M2Y=" class="underline font-semibold">sending a DM</a> or by using the form below.</p>
                 <form>
                     <div class="mb-6">
                         <input

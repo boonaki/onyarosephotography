@@ -10,6 +10,8 @@ function menu(){
     }
 }
 
+document.querySelector('#bg').style.height = window.innerHeight + 'px'
+
 const gallery = document.querySelector('#paginated_gallery');
 if(gallery){
     const gallery_scroller = gallery.querySelector('#gallery_scroller');
@@ -26,4 +28,18 @@ if(gallery){
         console.log(gallery_item_size)
         gallery_scroller.scrollLeft += gallery_item_size
     }
+}
+
+let contact = document.querySelector('#contact')
+let about = document.querySelector('#about')
+document.getElementById('contactButton').addEventListener('click', scrollContact)
+document.getElementById('dt-contactButton').addEventListener('click', scrollContact)
+document.getElementById('dt-aboutButton').addEventListener('click', scrollAbout)
+
+function scrollContact(){
+    contact.scrollIntoView({behavior: 'smooth'})
+}
+
+function scrollAbout(){
+    about.scrollIntoView({behavior: 'smooth'})
 }

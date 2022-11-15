@@ -10,7 +10,9 @@ function menu(){
     }
 }
 
-document.querySelector('#bg').style.height = window.innerHeight + 'px'
+if(window.innerWidth < 768){
+    document.querySelector('#bg').style.height = window.innerHeight + 'px'
+}
 
 const gallery = document.querySelector('#paginated_gallery');
 if(gallery){
@@ -32,9 +34,13 @@ if(gallery){
 
 let contact = document.querySelector('#contact')
 let about = document.querySelector('#about')
-document.getElementById('contactButton').addEventListener('click', scrollContact)
-document.getElementById('dt-contactButton').addEventListener('click', scrollContact)
-document.getElementById('dt-aboutButton').addEventListener('click', scrollAbout)
+if(about){
+    document.getElementById('dt-aboutButton').addEventListener('click', scrollAbout)
+}
+if(contact){
+    document.getElementById('contactButton').addEventListener('click', scrollContact)
+    document.getElementById('dt-contactButton').addEventListener('click', scrollContact)
+}
 
 function scrollContact(){
     contact.scrollIntoView({behavior: 'smooth'})

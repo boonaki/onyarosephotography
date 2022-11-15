@@ -25,13 +25,17 @@
 .ssp-italic{
     font-style: italic;
 }
+.raleway{
+    font-family: 'Raleway';
+    font-weight: 300;
+}
 
 .test{
     border: 1px solid red;
 }
 
 .main-bg-color{
-    background: #fffffff2;
+    background: #ffffffdb;
 }
 .main-text-color{
     color: #fffffff2;

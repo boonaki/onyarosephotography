@@ -10,7 +10,7 @@ function menu(){
     }
 }
 
-if(window.innerWidth < 768){
+if(window.innerWidth > 768){
     document.querySelector('#bg').style.height = window.innerHeight + 'px'
 }
 

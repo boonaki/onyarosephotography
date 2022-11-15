@@ -691,8 +691,8 @@ video {
   width: 100%;
 }
 
-.w-4\/6 {
-  width: 66.666667%;
+.w-3\/6 {
+  width: 50%;
 }
 
 .w-fit {
@@ -1315,6 +1315,10 @@ video {
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:rounded-xl {

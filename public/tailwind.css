@@ -1138,7 +1138,15 @@ video {
 
 .raleway{
   font-family: 'Raleway';
-  font-weight: 300;
+  font-weight: 400;
+}
+
+.raleway-med{
+  font-weight: 500;
+}
+
+.raleway-bold{
+  font-weight: 600;
 }
 
 .test{

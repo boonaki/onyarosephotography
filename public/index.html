@@ -4,7 +4,8 @@
   	    <meta charset="utf-8">
   	    <meta name="description" content="Hello, my name is Jasmine Johnson, the lead photographer for Onya Rose Photography, located in Raleigh, NC. You do you and I'll tell your story in a way that makes you feel something. Available for weddings, events and portraits of everyone and everything.">
   	    <meta name="keywords" content="photography, photographer, weddings, wedding, event, events">
-		<meta name="viewport" content="width=device-width, initial-scale=1">      
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta property="og:image" content="https://onyarosephotography.netlify.app/imgs/o.png">     
 		<title>Onya Rose Photography</title>
         <link rel="canonical" href="https://onyarosephotography.netlify.app"/>
 		<!-- external CSS link -->
@@ -15,10 +16,11 @@
         sizes="32x32"
         href="./favicon-32x32.png"
         />
+
         <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@latest/dist/flowbite.min.css" /> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,400;1,600&&family=Raleway:wght@300;400&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,400;1,600&&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
         <script type="text/javascript" src="main.js" defer></script>
 	</head>
 	<body class="">
@@ -41,8 +43,8 @@
         </div>
 
         <header class="w-full">
-            <nav class="w-full flex justify-end md:justify-between p-4 items-center md:bg-white md:fixed md:z-20">
-                <h2 class="text-xl raleway p-2 rounded hidden md:block">ONYA ROSE</h2>
+            <nav class="w-full flex justify-end md:justify-between px-4 py-3 items-center md:bg-white md:fixed md:z-20">
+                <h2 class="text-xl raleway-med raleway p-2 rounded hidden md:block">ONYA ROSE</h2>
                 <span onclick="menu()" class="md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="28" height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <line x1="4" y1="6" x2="20" y2="6" />
@@ -73,7 +75,7 @@
         <div class="md:flex md:flex-col md:items-center md:mb-8">
             <div class="md:bg-white md:p-2 md:rounded-xl md:w-[767px] lg:w-[1024px]">
                 <section class="main-bg-color py-6 flex flex-col items-center">
-                    <h2 class="text-center raleway text-2xl px-4 m-2 w-fit">An unobtrusive approach to capturing <span class="font-bold raleway">real emotion.</span></h2>
+                    <h2 class="text-center raleway text-2xl px-4 m-2 w-fit">An unobtrusive approach to capturing <span class="raleway-med raleway">real emotion.</span></h2>
                     <p class="text-center text-lg px-4 mx-2 md:px-[10%]">Explore <a class="underline font-semibold" href="/gallery">my gallery</a>, book an <a class="underline font-semibold" href="/book">appointment</a> or <span id="contactButton" class="underline font-semibold cursor-pointer">get in touch</span> with me to help capture your next moments 😊</p>
                 </section>
             
@@ -122,14 +124,14 @@
                             <!-- <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ipsum!</p> -->
                         </div>
                         <div class="m-2 mt-4 md:mb-[35px]">
-                            <a href="#" class="py-2 px-8 border border-off-grey rounded md:text-xl md:cursor-pointer md:transition md:hover:bg-button">View the Entire Gallery</a>
+                            <a href="/gallery" class="py-2 px-8 border border-off-grey rounded md:text-xl md:cursor-pointer md:transition md:hover:bg-button">View the Entire Gallery</a>
                         </div>               
                     </div>
                 </section>
             
                 <section class="main-bg-color md:w-full">
                     <div class="md:flex md:flex-col md:justify-center md:items-center">           
-                        <h2 class="pt-4 text-semi-bold text-2xl text-center md:text-bold md:text-2xl md:border-b-2 md:border-off-grey md:pb-2">Recent Testimonies</h2>
+                        <h2 class="pt-4 raleway-bold text-2xl raleway text-center md:text-bold md:text-2xl md:border-b-2 md:border-off-grey md:pb-2">Recent Testimonies</h2>
                     
                         <div id="paginated_gallery" class="relative max-w-full md:w-full md:px-24">
                             <ul id="gallery_scroller" class="flex items-center snap-x overflow-y-hidden overflow-x-scroll scroll-smooth py-4 lg:overflow-x-hidden">
@@ -144,9 +146,9 @@
                                     <h1 class="text-lg font-semi-bold">James B.</h1>
                                 </li>
                                 <li id="t-1" class="bg-white min-w-[80%] text-center py-6 px-6 m-4 snap-center relative h-[220px] flex align-center justify-center items-center flex-col shadow-lg rounded-lg lg:px-16">
-                                    <img alt="headshot" class="rounded-full h-[100px] w-[100px] object-cover" src="./imgs/port-3.jpg">
-                                    <p class="pt-2 text-xl font-bold italic raleway">"Great to work with, and outstanding photos."</p>
-                                    <h1 class="text-lg font-semi-bold">Mike H.</h1>
+                                    <img alt="headshot" class="rounded-full h-[100px] w-[100px] object-cover" src="./imgs/port-03.jpg">
+                                    <p class="pt-2 text-xl font-bold italic raleway">"I absolutely love the photos, superb work."</p>
+                                    <h1 class="text-lg font-semi-bold">Lillie L.</h1>
                                 </li>
                             </ul>
                         </div>
@@ -170,7 +172,7 @@
                 </section>
             
                 <section id="about" class="main-bg-color pt-3 pb-12 flex flex-col items-center md:w-full md:px-[10%]">
-                    <h2 class="text-2xl pb-2 mx-4 mb-2 border-off-grey w-fit font-semi-bold md:text-2xl">Some stuff about me!</h2>
+                    <h2 class="text-2xl pb-2 mx-4 mb-2 w-fit raleway raleway-bold md:text-2xl md:border-b-2 md:border-off-grey">Some stuff about me!</h2>
                     <p class="text-center text-lg px-4">Hello, my name is Jasmine Johnson, the lead photographer for Onya Rose Photography, located in Raleigh, NC</br><span class="font-bold">Learn more here!</span></p>
                     <div class="flex justify-evenly w-full pt-4 px-12">
                         <span>
@@ -179,7 +181,7 @@
                             </a>
                         </span>
                         <span>
-                            <a href="#">
+                            <a href="https://www.facebook.com/OnyaRoseProductions">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-[40px] w-[40px]"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
                             </a>
                         </span>

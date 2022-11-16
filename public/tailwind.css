@@ -1297,10 +1297,6 @@ video {
     width: 25%;
   }
 
-  .md\:w-\[300px\] {
-    width: 300px;
-  }
-
   .md\:cursor-pointer {
     cursor: pointer;
   }

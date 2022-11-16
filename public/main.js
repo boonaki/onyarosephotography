@@ -10,10 +10,10 @@ function menu(){
     }
 }
 
-if(window.innerWidth > 768){
-    document.querySelector('#bg').style.height = window.innerHeight + 'px'
-}
-
+// if(window.innerWidth > 768){
+//     document.querySelector('#bg').style.height = window.innerHeight + 'px'
+// }
+document.querySelector('#bg').style.height = window.innerHeight + 'px'
 const gallery = document.querySelector('#paginated_gallery');
 if(gallery){
     const gallery_scroller = gallery.querySelector('#gallery_scroller');
